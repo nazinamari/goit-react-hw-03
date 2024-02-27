@@ -1,4 +1,29 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0px auto;
+    padding: 15px;
+    background: rgb(247 245 255);
+    color: rgb(60 72 170);
+}
 
+.field{
+    font-size: 30px;
+    padding: 5px;
+    border: 1px solid rgb(105 116 202);
+    border-radius: 4px;
+    background: #edefff;
+    color: rgb(60 72 170);
+}
 
+.button {
+    width: 140px;
+    height: 44px;
+}
 
-
+.error {
+    color: #fc5703;
+}

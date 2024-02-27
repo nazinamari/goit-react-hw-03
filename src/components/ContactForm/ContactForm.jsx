@@ -1,8 +1,9 @@
 // import css from './ContactForm.module';
-import { nanoid } from 'nanoid';
 import { Formik, Form, Field } from 'formik';
+import { nanoid } from 'nanoid';
 import { ErrorMessage } from 'formik';
 import * as Yup from 'yup';
+import { form, field, error, button } from './ContactForm.module.css';
 
 const nameRegExp = /^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$/;
 const numberRegExp = /\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}/;
@@ -45,19 +46,19 @@ export default function ContactForm ({ onAdd }) {
             onSubmit={handleSubmit}
             validationSchema={ContactSchema}
         >
-            <Form>
-                <div>
+            <Form className={form}>
+                <div className={field}>
                     <label htmlFor={nameFieldId}>Name</label>
                     <Field type="text" name="name" id={nameFieldId} />
-                    <ErrorMessage name="name" component="span" />
+                    <ErrorMessage className={error} name="name" component="span" />
                 </div>
 
-                <div>
+                <div className={field}>
                     <label htmlFor={numberFieldId}>Number</label>
                     <Field type="text" name="number" id={numberFieldId}/>
-                    <ErrorMessage name="number" component="span" />
+                    <ErrorMessage className={error} name="number" component="span" />
                 </div>
-                <button type="submit">Add contact</button>
+                <button className={button} type="submit">Add contact</button>
             </Form>
         </Formik>
     )
