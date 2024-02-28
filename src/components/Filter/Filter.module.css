@@ -1,0 +1,20 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    color: rgb(60 72 170);
+    background: rgb(247 245 255);
+    border-radius: 8px;
+    max-width: 100%
+}
+
+.search {
+    font-weight: 400;
+    display: flex;
+    margin-bottom: 8px;
+    padding-right: 20px;
+    cursor: default;
+    margin-bottom: 10px;
+    font-size: 30px;
+}

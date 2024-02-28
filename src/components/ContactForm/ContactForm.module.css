@@ -1,27 +1,27 @@
 .form{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     border-radius: 8px;
-    max-width: 600px;
-    margin: 0px auto;
-    padding: 15px;
+    padding: 30px;
     background: rgb(247 245 255);
     color: rgb(60 72 170);
+    align-items: center;
 }
 
 .field{
     font-size: 30px;
-    padding: 5px;
-    border: 1px solid rgb(105 116 202);
-    border-radius: 4px;
-    background: #edefff;
-    color: rgb(60 72 170);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border: none;
 }
 
-.button {
-    width: 140px;
-    height: 44px;
+.label{
+    padding-right: 20px;
+    cursor: default;
+    margin-bottom: 10px;
+    font-size: 30px;
 }
 
 .error {
