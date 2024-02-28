@@ -53,6 +53,7 @@ ul{
     font-size: 30px;
     transition: border-color 0.25s;
     height: 100%;
+    width: 200px;
   }
   button:hover {
     border-color: #646cff;
