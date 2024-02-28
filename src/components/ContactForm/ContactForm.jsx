@@ -50,14 +50,14 @@ export default function ContactForm ({ onAdd }) {
                 <div className={css.field}>
                     <label className={css.label} htmlFor={nameFieldId}>Name</label>
                     <Field type="text" name="name" id={nameFieldId} />
-                    <ErrorMessage className={css.error} name="name" component="span" />
                 </div>
+                <ErrorMessage className={css.error} name="name" component="span" />
 
                 <div className={css.field}>
                     <label className={css.label} htmlFor={numberFieldId}>Number</label>
                     <Field type="text" name="number" id={numberFieldId}/>
-                    <ErrorMessage className={css.error} name="number" component="span" />
                 </div>
+                <ErrorMessage className={css.error} name="number" component="span" />
                 <button type="submit">Add contact</button>
             </Form>
         </Formik>

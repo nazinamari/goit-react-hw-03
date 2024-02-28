@@ -46,13 +46,14 @@ ul{
   button {
     background-color: #6974ca; 
     color: white;
-    padding: 20px;
+    padding: 15px;
     border-radius: 4px;
     border: 1px solid rgb(105 116 202);
     cursor: pointer;
-    font-size: 30px;
+    font-size: 28px;
     transition: border-color 0.25s;
     height: 100%;
+    width: 200px;
   }
   button:hover {
     border-color: #646cff;
@@ -71,7 +72,7 @@ ul{
 }
 
 .section{
-  width: 800px;
+  width: 788px;
 }
 
 input {
@@ -79,7 +80,7 @@ input {
   border: 1px solid rgb(105 116 202);
   border-radius: 4px;
   height: 100%;
-  color: rgb(60 72 170);
+  color: #333;
   background: #edefff;
   padding: 10px;
   transition: border-color .25s;
