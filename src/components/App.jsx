@@ -4,7 +4,7 @@ import initualContacts from '../data/contacts.json';
 import ContactForm  from './ContactForm/ContactForm';
 import Filter from './Filter/Filter';
 import ContactList from './ContactList/ContactList';
-import css from './App.module.css';
+import { container, wrapPhoneBook} from './App.module.css';
 
 export default function App () {
     const [contacts, setContacts] = useState(() => {
@@ -35,10 +35,13 @@ export default function App () {
         );
 
     return (
-        <div className={css.container}>
-            <ContactForm onAdd={addContact}/>
-            <Filter value={filter} onFilter={setFilter}/>
-            <ContactList contacts={visibleContacts} onDelete={deleteContact}/>
+        <div className="container">
+            <h1>PhoneBook</h1>
+            <div className="wrapPhoneBook">
+                <ContactForm onAdd={addContact}/>
+                <Filter value={filter} onFilter={setFilter}/>
+                <ContactList contacts={visibleContacts} onDelete={deleteContact}/>
+            </div>
         </div>
     )
 
