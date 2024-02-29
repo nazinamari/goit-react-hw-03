@@ -1,6 +1,6 @@
-import css from './Filter.module.css'
+import css from './SearchBox.module.css'
 
-export default function Filter ({ value, onFilter}) {
+export default function SearchBox ({ value, onFilter}) {
     return(
         <div className={css.form}>
             <p className={css.search}>Search</p>

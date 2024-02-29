@@ -2,7 +2,7 @@ import { useState} from 'react';
 import { useEffect} from 'react';
 import initualContacts from '../data/contacts.json';
 import ContactForm  from './ContactForm/ContactForm';
-import Filter from './Filter/Filter';
+import SearchBox from './SearchBox/SearchBox';
 import ContactList from './ContactList/ContactList';
 import css from './App.module.css';
 
@@ -42,7 +42,7 @@ export default function App () {
                     <ContactForm onAdd={addContact}/>
                 </section>
                 <section className={css.section}>
-                    <Filter value={filter} onFilter={setFilter}/>
+                    <SearchBox value={filter} onFilter={setFilter}/>
                 </section>
                 <section className={css.section}>
                     <ContactList contacts={visibleContacts} onDelete={deleteContact}/>

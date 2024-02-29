@@ -11,13 +11,13 @@ const numberRegExp = /\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,
 const ContactSchema = Yup.object().shape({
     name: Yup.string()
     .min(3, 'Too Short!')
-    .max(30, 'Too Long!')
-    .required('Name is a required field')
+    .max(50, 'Too Long!')
+    .required('Required')
     .matches(nameRegExp, "Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer"),
     number: Yup.string()
-    .min(8)
-    .max(30, 'Too Long!')
-    .required('Number is a required field')
+    .min(3)
+    .max(50, 'Too Long!')
+    .required('Required')
     .matches(numberRegExp, "Mobile phone number must have 8 digits"),
 });
 
